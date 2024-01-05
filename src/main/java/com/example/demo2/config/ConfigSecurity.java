@@ -39,8 +39,8 @@ public class ConfigSecurity {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
         http.authorizeHttpRequests(configure ->{configure
-                .requestMatchers(HttpMethod.GET,"/v1/book").hasRole("Empleado")
-                .requestMatchers(HttpMethod.GET,"/v1/book/**").hasRole("Empleado")
+               .requestMatchers(HttpMethod.GET,"/v1/book").hasRole("Empleado")
+               .requestMatchers(HttpMethod.GET,"/v1/book/**").hasRole("Empleado")
                 .requestMatchers(HttpMethod.POST ,"v1/book").hasRole("Jefe")
                 .requestMatchers(HttpMethod.PUT,"v1/book/**").hasRole("Jefe")
                 .requestMatchers(HttpMethod.DELETE,"//book/**").hasRole("Jefe")

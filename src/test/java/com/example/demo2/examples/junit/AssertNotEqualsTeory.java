@@ -8,7 +8,7 @@ public class AssertNotEqualsTeory {
     @Test
     public void miTest(){
       //  assertNotEquals(1,2);
-        assertNotEquals(1,1);
+        assertNotEquals(2,1);
 
 
     }
